@@ -1,0 +1,350 @@
+
+/* ===== 1. GENERAL STYLES ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4d84e;
+    color: #333;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ===== 2. TOP NAVIGATION BAR ===== */
+
+.topbar {
+    width: 100%;
+    min-height: 48px;
+    background-color: #292a28;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+}
+
+.brand {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.top-navigation {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.top-navigation a {
+    font-size: 12px;
+    padding: 15px 0;
+    transition: color 0.3s;
+}
+
+.top-navigation a:hover {
+    color: #e4d84e;
+}
+
+
+/* ===== 3. MAIN CONTAINER ===== */
+
+.container {
+    width: 94%;
+    max-width: 1300px;
+    margin: 12px auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+/* ===== 4. SIDEBAR ===== */
+
+.sidebar {
+    width: 145px;
+    flex-shrink: 0;
+    background-color: #292a28;
+    color: white;
+}
+
+
+/* Profile Image */
+
+.profile {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.profile img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Sidebar Navigation */
+
+.side-navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+}
+
+.side-navigation a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 5px;
+    font-size: 10px;
+    color: #ddd;
+    border-bottom: 1px solid #3b3c39;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.side-navigation a span {
+    width: 12px;
+    text-align: center;
+}
+
+.side-navigation a:hover {
+    color: #e4d84e;
+    background-color: #383a35;
+}
+
+
+/* Sidebar Bottom */
+
+.sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    border-top: 1px solid #454640;
+}
+
+.sidebar-bottom p {
+    font-size: 9px;
+    color: #bbb;
+}
+
+.sidebar-bottom a {
+    font-size: 10px;
+    color: #ddd;
+}
+
+.sidebar-bottom a:hover {
+    color: #e4d84e;
+}
+
+
+/* ===== 5. MAIN CONTENT ===== */
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.card {
+    background-color: #f4f5e9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #d4d7c4;
+}
+
+.card h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+/* ===== 6. PORTFOLIO FILTERS ===== */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.filters button {
+    padding: 4px 8px;
+    font-size: 9px;
+    color: #555;
+    background: transparent;
+    border: 1px solid #c9cbbd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filters button:hover {
+    background-color: #ad6256;
+    color: white;
+    border-color: #ad6256;
+}
+
+
+/* ===== 7. PROJECT IMAGES ===== */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project {
+    flex: 0 1 125px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.project img {
+    display: block;
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.04);
+}
+
+
+/* ===== 8. CONTACT LAYOUT ===== */
+
+.contact-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.contact-info {
+    flex: 0 0 42%;
+    min-width: 0;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    margin: 9px 0;
+    font-size: 10px;
+    overflow-wrap: anywhere;
+}
+
+.contact-info p span {
+    width: 12px;
+    flex-shrink: 0;
+    color: #ad6256;
+}
+
+
+/* ===== 9. SOCIAL LINKS ===== */
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 14px;
+}
+
+.socials a {
+    width: 19px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ad6256;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background-color: #333;
+}
+
+
+/* ===== 10. CONTACT FORM ===== */
+
+.contact-form {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Name and Email side by side */
+
+.form-row {
+    display: flex;
+    gap: 8px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 0;
+    margin-bottom: 8px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 9px;
+    margin-bottom: 4px;
+}
+
+/* Input boxes */
+
+.form-group input,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    background: transparent;
+    border: 1px solid #d8d9c9;
+    outline: none;
+}
+
+/* Large message box */
+
+.form-group textarea {
+    height: 75px;
+    resize: vertical;
+}
+
+/* Focus effect */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ad6256;
+}
+
+/* Send button */
+
+.send-btn {
+    padding: 7px 12px;
+    background-color: #ad6256;
+    color: white;
+    border: none;
+    font-size: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+    background-color: #874b42;
+}
